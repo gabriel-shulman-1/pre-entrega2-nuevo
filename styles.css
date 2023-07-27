@@ -1,0 +1,225 @@
+header{
+    padding: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+#meses{
+    background-color: white;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 1rem;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    /* grid-template-columns: repeat(2,auto); */
+    /* grid-template-rows: repeat(2,auto); */
+    /* grid-template-areas:
+        "i1 i3"
+        "i2 i3"; */
+    /* gap: 3rem; */
+    padding: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    /* align-content: center; */
+    align-items: center;
+}
+.inicioDeRegistro{
+    gap: 1rem;
+    width: 70%
+}
+.inicioDeRegistro:nth-child(1){
+    grid-area: i1;
+}
+.inicioDeRegistro:nth-child(2){
+    grid-area: i2;
+}
+.inicioDeRegistro:nth-child(3){
+    grid-area: i3;
+}
+
+main div ul {
+    padding-left: 0;
+}
+main div ul .mes{
+    list-style: none;
+    margin: 0.4rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: gray;
+}
+
+main div ul .mes:hover{
+    background-color: rgb(255, 255, 255);
+}
+main div p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    gap: 0.6rem;
+}
+
+#registroIniciado {
+    border-style: none;
+    padding: 2rem;
+}
+
+#registroInicial {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #resultadoInicial{
+    border-style: none;
+    padding: 1rem;
+}
+.resultados {
+    margin: 0;
+}
+
+#registros{
+    display: none;
+}
+#registroNuevo{
+    border-style: none;
+    background-color: white;
+}
+.inicioDeRegistro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 1rem;
+    background-color: rgb(230, 230, 230);
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+.textoMovimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    gap: 0.6rem;
+}
+#continuar{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+    grid-template-areas: 
+    "tx tx"
+    "cont term";
+    width: 35rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+}
+
+#continuar .textoMovimiento {
+    grid-area: tx;
+    text-align: center;
+}
+
+#cont{
+    grid-area: cont;
+    align-items: center;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#term{
+    grid-area: term;
+    align-items: center;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#botonRegistro{
+    border-style: none;
+}
+
+#errorRegistrosTerminados{
+    font-weight: bold;
+}
+.nb{
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 6rem;
+}
+
+.nb a {
+    text-decoration: none;
+}
+
+#contenedor{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor .resumenListo{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 1rem;
+    background-color: white;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.inicioResumen{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 1rem;
+    background-color: white;
+    justify-content: space-around;
+}
+
+.finalResumen{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 1rem;
+    background-color: white;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+select{
+    width: auto;
+}
+
+input{
+    width: auto;
+}
+.resumenUss{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 1rem;
+    background-color: rgb(23, 216, 6);
+    justify-content: space-around;
+    padding: 1rem;
+}
